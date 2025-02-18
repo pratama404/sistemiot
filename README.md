@@ -31,10 +31,10 @@ cd sistemiot
 
 ### **B. Setup Database**
 1. **Buka Laragon**, klik **Menu > MySQL > phpMyAdmin**.
-2. **Buat database baru**, misalnya **iot_db**.
+2. **Buat database baru**, misalnya **sistem_iot**.
 3. **Import file SQL**:
    - Buka **phpMyAdmin**
-   - Pilih database **iot_db**
+   - Pilih database **sistem_iot**
    - Klik **Import**, lalu pilih file **database.sql** dari repository
 
 ---
@@ -47,7 +47,7 @@ Edit file `config.php` atau yang menangani koneksi database:
 $host = "localhost";
 $user = "root"; // Default Laragon
 $pass = "";     // Kosongkan jika belum diubah
-$db   = "iot_db";
+$db   = "sistem_iot";
 
 $conn = mysqli_connect($host, $user, $pass, $db);
 
@@ -105,10 +105,9 @@ Kirim data menggunakan **POST** ke `http://localhost/sistemiot/api.php`.
 - Ubah port di **Menu > Preferences > Apache > Port**.
 
 **❌ Database tidak terkoneksi?**
-- Cek apakah database **iot_db** sudah dibuat dan user/password MySQL benar.
+- Cek apakah database **sistem_iot** sudah dibuat dan user/password MySQL benar.
 
 ---
 
 ## **7. Kontributor**
-- Nama Kamu (@username)
-- Open for contribution 🚀
+- Pratama (@pratama404)
